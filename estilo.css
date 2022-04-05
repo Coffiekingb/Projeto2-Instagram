@@ -1,0 +1,245 @@
+body{
+    font-family: 'Roboto', sans-serif;;    
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
+a{
+    color: initial;
+    text-decoration: none;
+}
+h4{
+    font-size: 12px;
+}
+/*TOPO*/
+.conteiner-topo{
+    background-color: white;
+    border-bottom:1px  solid #DBDBDB;
+    box-sizing: border-box;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.conteiner{ 
+    width: 1000px;
+    
+}
+
+.topo{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    padding:15px 0 10px 0 ;
+}
+.topo div{
+    display: flex;
+    flex-direction: row;
+}
+.topo .logo-instagram{
+    height: 22px;
+    width: 22px;
+}
+ .borda-v{
+    height: 22px;
+    width: 1px;
+    margin: 0 10px 0 10px;
+    background-color: #DBDBDB ;
+}
+.topo img{
+    width: 103px;
+    height: 29px;
+    margin-top: 05px;
+}
+.esquerda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pesquisa-bar{
+    width: 215px;
+    height: 26px;
+    margin-top: 5px;
+    background-color: #FAFAFA ;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #979797;
+}
+.direita{
+    width: 136px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.direita .icon{
+    height: 22px;
+    width: 22px;
+}
+/*TOPO*/
+
+.conteiner-posts{
+    margin-top: 80px;
+    width: 1000px;
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.posts{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+   
+}
+
+.espaco-h{
+    width: 30px;
+    height: 100px;
+    background-color: red;
+}
+/*STORIES*/
+.stories{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #DBDBDB;
+}
+.stories-bar{
+    box-sizing: border-box;
+    width: 600px;
+    display: flex; 
+    align-items: center;
+    background-color: aqua;
+    overflow: hidden ;
+}
+.stories-icon img{
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;    
+}
+.relative{
+position:relative;
+}
+
+.absolute{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.absolute img{
+    width: 56px;
+    height: 56px;
+}
+.stories-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 14px;
+}
+.stories-icon h3{
+    font-size: 12px;
+}
+/*STORIES*/
+
+.publicacoes{ margin-top: 25px;
+    width: 100%;
+    height: 200px;
+    background-color: lightgrey;
+}
+/* USUARIO-CARD*/
+.sidebar{
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+}
+.sidebar-top{
+    display: flex;
+    height: 120px;
+}
+.usuario{
+    display: flex;
+    margin-right: 100px;
+    white-space: nowrap;
+    align-items: center;
+}
+.usuario img{
+    width: 56px;
+    height: 56px;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+.username{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.username h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+/* USUARIO-CARD*/
+
+/*BARRA RECOMENDAÇÃO*/
+.sidebar-midle{
+    display: flex;
+    justify-content: space-between;    
+    
+}
+.sidebar-midle h4{
+    color:#8E8E8E;
+    font-weight: bold;
+}
+.sidebar-midle h4:last-child{
+    color:black;
+}
+.sidebar-bottom{
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.sidebar-bottom .usuario{
+    margin-left: 0;
+}
+.recomendacoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+}
+.sidebar-bottom img{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+.sidebar-bottom img:last-child{
+    width: 10px;
+    height: 10px;   
+}
+.botao-seguir{
+    color: #139EF2;
+    font-weight: bold;
+}
+/*BARRA RECOMENDAÇÃO*/
+
+/*RESPONSIVIDADE*/
+@media (max-width: 935px){
+    .sidebar{
+        display: none;
+    }
+    .posts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/*RESPONSIVIDADE*/
